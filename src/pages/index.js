@@ -8,13 +8,19 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="container">
+        <div className="row">
+          <div className="col-qtr">
+            <Image />
+          </div>
+          <div className="col">
+            <h1>Let's digital!</h1>
+            <p>
+            Hi! I'm Treighton Mauldin. I am a developer, teacher, writer, aspiring personal trainer, and amateur photographer in Sacrmento, Ca. As a Web Developer, with about five years of experience with PHP, MySQL, JS, HTML, CSS, and WordPress, and over two years experience working with, and teaching React, Node, and MongoDB.
+            </p>
+          </div>
+        </div>
+      </div>
   </Layout>
 )
 

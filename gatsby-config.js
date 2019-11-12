@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Treighton Mauldin`,
+    description: `The text on this site is meant to be read in the voice of Robert Downey jr. as Tony Stark a.k.a. Iron Man`,
+    author: `@treighton1988`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
