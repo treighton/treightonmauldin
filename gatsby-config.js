@@ -19,7 +19,7 @@ module.exports = {
         name: "fonts",
         path: `${__dirname}/src/fonts/`
       }
-    }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
