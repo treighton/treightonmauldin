@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "manifold heavy";
+  src: url("./fonts/Manifold/ManifoldCF-Heavy.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/Manifold/ManifoldCF-Heavy.woff")
+      format("woff"); /* Pretty Modern Browsers */
+}
+@font-face {
+  font-family: "manifold heavy oblique";
+  src: url("./fonts/Manifold/ManifoldCF-HeavyOblique.woff2") format("woff2"),
+    /* Super Modern Browsers */
+      url("./fonts/Manifold/ManifoldCF-HeavyOblique.woff") format("woff"); /* Pretty Modern Browsers */
+}
+
+$header-font: "manifold heavy oblique";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  text-transform: uppercase;
+}
