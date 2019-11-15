@@ -62,23 +62,21 @@ const experience = () => (
   <Layout>
     <SEO title="Web Development Experience" />
     <div className="jumbotron">
-      <h1>Treighton's Experience</h1>
+      <div className="container">
+        <h1>Treighton's Experience</h1>
+      </div>
     </div>
     <div className="container">
-      <div className="row">
-        <div className="col">
-          <ul>
-            {resume.map(item => (
-              <ResumeItem
-                comapany={item.company}
-                position={item.position}
-                duration={item.duration}
-                location={item.location}
-                description={item.description}
-              />
-            ))}
-          </ul>
-        </div>
+      <div className="card-columns">
+        {resume.map(item => (
+          <ResumeItem
+            comapany={item.company}
+            position={item.position}
+            duration={item.duration}
+            location={item.location}
+            description={item.description}
+          />
+        ))}
       </div>
     </div>
   </Layout>
