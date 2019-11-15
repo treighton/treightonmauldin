@@ -9,9 +9,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="container">
-      <div className="row"></div>
-      <div className="row__align-center">
-        <div className="col-qtr">
+      <div className="row">
+        <div className="col"></div>
+      </div>
+      <div className="row align-items-center mb-4">
+        <div className="col-4">
           <Image />
         </div>
         <div className="col">
@@ -23,6 +25,10 @@ const IndexPage = () => (
             PHP, MySQL, JS, HTML, CSS, and WordPress, and over two years
             experience working with, and teaching React, Node, and MongoDB.
           </p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
           <h2>I bring a lot to the table...</h2>
           <p>
             Including in-depth knowledge of the WordPress ecosystem and how to

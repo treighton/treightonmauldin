@@ -17,3 +17,5 @@ const resumeItem = props => {
     </li>
   )
 }
+
+export default resumeItem
