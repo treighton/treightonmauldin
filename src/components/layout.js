@@ -40,17 +40,17 @@ const Layout = ({ children }) => {
           <div className="row">
             <div className="col-4 text-center">
               <div className="footer-link">
-                <a href="https://soltrans.org">SOLTRANS</a>
+                <a target="_blank" href="https://soltrans.org">SOLTRANS</a>
               </div>
             </div>
             <div className="col-4 text-center">
               <div className="footer-link">
-                <a href="https://farmvetco.org/hbh-search">HBH</a>
+                <a target="_blank" href="https://farmvetco.org/hbh-search">HBH</a>
               </div>
             </div>
             <div className="col-4 text-center">
               <div className="footer-link">
-                <a href="http://chi30.com">CHI30</a>
+                <a target="_blank" href="http://chi30.com">CHI30</a>
               </div>
             </div>
           </div>
