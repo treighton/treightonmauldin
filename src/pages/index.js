@@ -10,15 +10,17 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="container">
       <div className="row">
-        <div className="col"></div>
+
       </div>
-      <div className="row align-items-center mb-4">
-        <div className="col-4">
-          <Image />
+      <div className="row my-4">
+        <div className="col-6">
+          <div className="col">
+            <p className="accent-text">SACRAMENTO</p>
+          </div>
+          <h1 className="display-1">DEV<br />ELOP<br />ER</h1>
         </div>
         <div className="col">
-          <h1>Let's Get digital!</h1>
-          <p>
+          <p className="accent-frame">
             Hi! I'm Treighton Mauldin. I am a developer, teacher, writer,
             aspiring personal trainer, and amateur photographer in Sacrmento,
             Ca. As a Web Developer, with about five years of experience with
