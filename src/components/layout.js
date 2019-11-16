@@ -33,19 +33,24 @@ const Layout = ({ children }) => {
       <div className="footer">
         <div className="container-fluid">
           <div className="row">
+            <div className="col text-center">
+              <h2 className="display-2">Recent Projects</h2>
+            </div>
+          </div>
+          <div className="row">
             <div className="col-4 text-center">
               <div className="footer-link">
-                <Link>WORK</Link>
+                <a href="https://soltrans.org">SOLTRANS</a>
               </div>
             </div>
             <div className="col-4 text-center">
               <div className="footer-link">
-                <Link>WORK</Link>
+                <a href="https://farmvetco.org/hbh-search">HBH</a>
               </div>
             </div>
             <div className="col-4 text-center">
               <div className="footer-link">
-                <Link>WORK</Link>
+                <a href="http://chi30.com">CHI30</a>
               </div>
             </div>
           </div>

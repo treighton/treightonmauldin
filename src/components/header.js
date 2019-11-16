@@ -11,7 +11,9 @@ const Header = ({ siteTitle }) => (
       <div className="container">
         <div className="row py-5">
           <div className="col text-right">
-            <Link className="small link__light" to="/experience">RESUME</Link>
+            <Link className="small link__light" to="/experience">RESUME </Link>
+
+            <a className="small link__light" href="https://github.com/treighton">// GITHUB</a>
           </div>
         </div>
         <div className="row pb-5">
@@ -29,7 +31,7 @@ const Header = ({ siteTitle }) => (
             </h1>
           </div>
         </div>
-        <div className="row py-5 justify-content-end">
+        {/* <div className="row py-5 justify-content-end">
           <div className="col-2 text-center">
             <Link className="link__dark">WORK</Link>
           </div>
@@ -39,7 +41,7 @@ const Header = ({ siteTitle }) => (
           <div className="col-2 text-center">
             <Link className="link__dark">GITHUB</Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </header>

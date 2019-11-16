@@ -3,16 +3,12 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 
-const styledExperience = styled.li`
-  list-style: none;
-`
-
 const resumeItem = props => {
   const { comapany, position, duration, location, description } = props
 
   return (
-    <div className="card" onClick={() => props.handleClick(props.id)}>
-      <div className="card-header">
+    <div className={`card  ${props.active ? 'active' : ''}`} onClick={() => props.handleClick(props.id)}>
+      <div className={`card-header`}>
         <div className="card-title">
           <div className="d-flex w100 justify-content-between">
             <h4>{comapany}</h4>
