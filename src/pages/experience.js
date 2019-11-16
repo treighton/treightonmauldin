@@ -62,20 +62,25 @@ const experience = () => (
   <Layout>
     <SEO title="Web Development Experience" />
     <div className="container">
-      <div className="row my-4">
-        <div className="col-md-6">
-          <h1 className="display-2">I bring <br /> a lot to <br /> the table...</h1>
+      <div className="row mt-5">
+        <div className="col">
+          <p className="accent-text small">I bring  a lot to  the table...</p>
         </div>
-        <div className="col-md-6">
-          <p>
-            Including in-depth knowledge of the <span className="highlight">WordPress ecosystem</span> and how to
-            use it creatively to solve a variety of problems, strong <span className="highlight"> Javascript</span> skills including node js, the current popular frontend ecosystem of <span className="highlight">React</span>, Webpack, and Jest, <span className="highlight">jQuery</span> (yep still proud of my jQuery
-           skills), and although I'm not
-           recreating classical art with pure HTML and CSS I write it with
-           passion and attention to the details of <span className="highlight">accessibility</span> and semantics.
+      </div>
+      <div className="row mb-5">
+        <div className="col-md-5">
+          <h1><span className="display-1">Res<br />ume:</span></h1>
+        </div>
+        <div className="col-md-7">
+
+          <h2 className="display-2">The Treighton Mauldin Story</h2>
+          <div className="accent-frame">
+            <p>
+              Including in-depth knowledge of the <span className="highlight">WordPress ecosystem</span> and how to use it creatively to solve a variety of problems, strong <span className="highlight"> Javascript</span> skills including node js, the current popular frontend ecosystem of <span className="highlight">React</span>, Webpack, and Jest, <span className="highlight">jQuery</span> (yep still proud of my jQuery skills), and although I'm not                   recreating classical art with pure HTML and CSS I write it with passion and attention to the details of <span className="highlight">accessibility</span> and semantics.
             In addition to coding, I also have <span className="highlight">excellent communication skills</span>
-            and a business mindset that helps deliver profitable projects.
+              and a business mindset that helps deliver profitable projects.
           </p>
+          </div>
         </div>
       </div>
       <div className="card-columns">
