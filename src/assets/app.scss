@@ -153,3 +153,52 @@ strong {
   border: 4px solid rgba(97,100,99,0.14);
   padding: 2rem 2rem;
 }
+
+.footer {
+  margin-top: 10rem !important;
+}
+
+.footer-link {
+  margin: auto;
+  height: 2.2rem !important;
+  width: 50%;
+  color: $light;
+  padding: 1rem;
+  a {
+    color: $light;
+  }
+  &:hover {
+    a {
+      color: $dark;
+      display: block;
+      line-height: 1;
+    }
+    background-color: $highlight;
+    background-position: 0 -100px;
+    color: $dark;
+    font-family: $header-font;
+    font-size: 2rem;
+  }
+}
+
+.black-box {
+  padding: 2rem 2rem 1rem;
+  border: 4px solid #1D1D1D;
+  border-bottom:0 ;
+  &:nth-child(2){
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.colophon {
+  align-self: flex-end;
+  * {
+    font-size: .8rem;
+  }
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

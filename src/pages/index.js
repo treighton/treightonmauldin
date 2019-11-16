@@ -9,13 +9,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="container">
-      <div className="row">
-      </div>
       <div className="row my-4">
         <div className="col-md-6">
-          <div className="col">
-            <p className="accent-text">SACRAMENTO</p>
-          </div>
+          <p className="accent-text">SACRAMENTO</p>
           <h1 className="display-1">DEV<br />ELOP<br />ER</h1>
         </div>
         <div className="col-md-6">
@@ -33,7 +29,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row mb-5">
         <div className="col">
           <p className="accent-text-alt"><span className="accent-frame">LET'S</span> GET D1G1TAL</p>
         </div>
