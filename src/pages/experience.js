@@ -67,6 +67,23 @@ const experience = () => (
       </div>
     </div>
     <div className="container">
+      <div className="row">
+        <div className="col">
+          <h2>I bring a lot to the table...</h2>
+          <p>
+            Including in-depth knowledge of the WordPress ecosystem and how to
+            use it creatively to solve a variety of problems, strong Javascript
+            skills including node js, the current popular frontend ecosystem of
+            React, Webpack, and Jest, jQuery (yep still proud of my jQuery
+            skills) and my favorite flavor vanilla ES6, and although I'm not
+            recreating classical art with pure HTML and CSS I write it with
+            passion and attention to the details of accessibility and semantics.
+            In addition to coding, I also have excellent communication skills
+            and a business mindset that helps deliver profitable projects.
+          </p>
+          <Link to="/experience">See my Resume</Link>
+        </div>
+      </div>
       <div className="card-columns">
         {resume.map(item => (
           <ResumeItem
