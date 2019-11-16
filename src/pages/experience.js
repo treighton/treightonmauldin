@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -58,43 +58,55 @@ const resume = [
   },
 ]
 
-const experience = () => (
-  <Layout>
-    <SEO title="Web Development Experience" />
-    <div className="container">
-      <div className="row mt-5">
-        <div className="col">
+function Experience(props) {
+  const [activeRes, setActiveRes] = useState(null)
 
-        </div>
-      </div>
-      <div className="row mb-5">
-        <div className="col-md-6">
-          <p className="accent-text small">MY STORY</p>
-          <h1><span className="display-1">Res<br />ume</span></h1>
-        </div>
-        <div className="col-md-6 push origin ">
-          <div className="accent-frame">
-            <p>
-              Including in-depth knowledge of the <span className="highlight">WordPress ecosystem</span> and how to use it creatively to solve a variety of problems, strong <span className="highlight"> Javascript</span> skills including node js, the current popular frontend ecosystem of <span className="highlight">React</span>, Webpack, and Jest, <span className="highlight">jQuery</span> (yep still proud of my jQuery skills), and although I'm not                   recreating classical art with pure HTML and CSS I write it with passion and attention to the details of <span className="highlight">accessibility</span> and semantics.
-            In addition to coding, I also have <span className="highlight">excellent communication skills</span>
-              and a business mindset that helps deliver profitable projects.
-          </p>
+  const handleClick = (id) => {
+    setActiveRes(id)
+  }
+
+  return (
+    <Layout>
+      <SEO title="Web Development Experience" />
+      <div className="container">
+        <div className="row mt-5">
+          <div className="col">
+
           </div>
         </div>
+        <div className="row mb-5">
+          <div className="col-md-6">
+            <p className="accent-text small">MY STORY</p>
+            <h1><span className="display-1">Res<br />ume</span></h1>
+          </div>
+          <div className="col-md-6 push origin ">
+            <div className="accent-frame">
+              <p>
+                Including in-depth knowledge of the <span className="highlight">WordPress ecosystem</span> and how to use it creatively to solve a variety of problems, strong <span className="highlight"> Javascript</span> skills including node js, the current popular frontend ecosystem of <span className="highlight">React</span>, Webpack, and Jest, <span className="highlight">jQuery</span> (yep still proud of my jQuery skills), and although I'm not                   recreating classical art with pure HTML and CSS I write it with passion and attention to the details of <span className="highlight">accessibility</span> and semantics.
+            In addition to coding, I also have <span className="highlight">excellent communication skills</span>
+                and a business mindset that helps deliver profitable projects.
+          </p>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          {resume.map((item, i) => (
+            <ResumeItem
+              key={i}
+              id={i}
+              comapany={item.company}
+              position={item.position}
+              duration={item.duration}
+              location={item.location}
+              description={item.description}
+              handleClick={handleClick}
+              active={activeRes === i}
+            />
+          ))}
+        </div>
       </div>
-      <div className="card-columns">
-        {resume.map(item => (
-          <ResumeItem
-            comapany={item.company}
-            position={item.position}
-            duration={item.duration}
-            location={item.location}
-            description={item.description}
-          />
-        ))}
-      </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
-export default experience
+export default Experience

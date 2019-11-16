@@ -202,3 +202,20 @@ strong {
     }
   }
 }
+
+.card {
+  .card-header{
+    background-color: $dark;
+    color: #fff;
+  }
+  .card-body{
+    color: $dark;
+  }
+  z-index: 9;
+  position: relative;
+  transition: all 150ms ease;
+  &:hover, &.active{
+    box-shadow: 4px 4px 0px 0px #E2A42B;
+    transform: translateY(-15px) translatex(-15px);
+  }
+}

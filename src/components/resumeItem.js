@@ -11,19 +11,22 @@ const resumeItem = props => {
   const { comapany, position, duration, location, description } = props
 
   return (
-    <div className="card ">
+    <div className="card" onClick={() => props.handleClick(props.id)}>
       <div className="card-header">
         <div className="card-title">
-          <h4>{comapany}</h4>
+          <div className="d-flex w100 justify-content-between">
+            <h4>{comapany}</h4>
+            <small className="text-right"><em> {duration}</em></small>
+          </div>
           <h5>
             <em>{position}</em>
           </h5>
         </div>
       </div>
-      <div className="card-body">
+      <div className={`card-body collapse ${props.active ? 'show' : ''}`}>
         <div className="card-text">
           <p>
-            <em>{duration}</em>
+
           </p>
           <p>
             <em>{location}</em>
