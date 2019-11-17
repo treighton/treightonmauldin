@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
             <div className="col-4 black-box">
               <div className="colophon">
 
-                <p>Site designed by <a href="https://brooke.helmstudio.co" className="">Brooke Campbell</a></p>
+                <p>Site look and feel by <a href="https://brooke.helmstudio.co" className="">Brooke Campbell</a></p>
                 <p>Site built with <a href="https://gatsbyjs.org">Gatsby</a></p>
                 <p>Site hosted on <a href="https://netlify.com">Netlify</a></p>
               </div>

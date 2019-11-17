@@ -58,11 +58,16 @@ const resume = [
   },
 ]
 
-function Experience(props) {
+function Experience() {
   const [activeRes, setActiveRes] = useState(null)
 
   const handleClick = (id) => {
-    setActiveRes(id)
+    if (activeRes === id) {
+      setActiveRes(null)
+    } else {
+      setActiveRes(id)
+    }
+
   }
 
   return (
