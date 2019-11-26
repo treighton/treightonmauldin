@@ -8,6 +8,15 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "WPgraqhQL",
+        fieldName: "wordpress",
+        url: "https://tr8pi.helmstudio.co/graphql",
+        refetchInterval: 60,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -29,8 +38,6 @@ module.exports = {
         icon: `src/images/tr8.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }
