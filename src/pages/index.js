@@ -24,7 +24,7 @@ const IndexPage = () => (
 					<p className="accent-frame">
 						Hi! I'm Treighton Mauldin. I am a{" "}
 						<span className="highlight">developer, teacher, writer</span>,
-						aspiring personal trainer, and amateur photographer in Sacrasmento,
+						aspiring personal trainer, and amateur photographer in Sacramento,
             Ca. As a Web Developer, with about{" "}
 						<span className="highlight">five years of experience</span> with
             PHP, MySQL, JavaScript, HTML, CSS, and WordPress, and{" "}
